@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html lang="en" class="lenis-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>KH Dental & Aesthetics Clinic | Premium Dentistry in Karachi</title>
+    <meta name="description" content="Experience world-class luxury dentistry and aesthetic treatments at KH Dental & Aesthetics Clinic in Clifton, Karachi. Precision, comfort, and premium patient care.">
+    <meta name="keywords" content="KH Dental, Aesthetics Clinic, Luxury Dentist Karachi, Clifton Dentist, Cosmetic Dentistry, Smile Enhancement, Dental Care Pakistan">
+    <link rel="canonical" href="https://khdental.com.pk/">
+    
+    <meta property="og:title" content="KH Dental & Aesthetics Clinic | Premium Dentistry">
+    <meta property="og:description" content="Experience world-class luxury dentistry and aesthetic treatments at KH Dental & Aesthetics Clinic in Clifton, Karachi.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_PK">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "KH Dental & Aesthetics Clinic",
+      "image": "",
+      "@id": "",
+      "url": "https://khdental.com.pk",
+      "telephone": "+923352108482",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "No. G, Yousuf Grand Plot, M-25, Mezzanine Floor, 8 KDA Scheme 5, Block 8 Clifton",
+        "addressLocality": "Karachi",
+        "postalCode": "74200",
+        "addressCountry": "PK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 24.8138,
+        "longitude": 67.0315
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "11:00",
+          "closes": "23:00"
+        }
+      ],
+      "priceRange": "PKR 2500 - 3500"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* ==========================================================================
+           CSS VARIABLES & RESET
+           ========================================================================== */
+        :root {
+            --primary: #071E3D;
+            --secondary: #0B5ED7;
+            --accent: #56CCF2;
+            --luxury: #D4AF37;
+            --bg: #F8FAFC;
+            --text: #0B132B;
+            --card-bg: rgba(255, 255, 255, 0.82);
+            --card-border: rgba(255, 255, 255, 0.18);
+            --glass-blur: blur(30px);
+            --transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            cursor: none !important; /* Hide default cursor for custom one */
+        }
+
+        html.lenis-smooth { scroll-behavior: auto; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            background-color: var(--bg);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            position: relative;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            line-height: 1.2;
+        }
+
+        p { line-height: 1.7; color: rgba(11, 19, 43, 0.8); }
+
+        a { text-decoration: none; color: inherit; }
+
+        button {
+            font-family: 'Poppins', sans-serif;
+            border: none;
+            outline: none;
+            background: none;
+        }
+
+        /* ==========================================================================
+           GLOBAL UTILITIES
+           ========================================================================== */
+        .glass {
+            background: var(--card-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            box-shadow: 0 16px 40px rgba(7, 30, 61, 0.08);
+        }
+        
+        /* Stop CSS transitions from fighting GSAP animations */
+        .is-animating {
+            transition: none !important;
+        }
+
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        section { padding: 8rem 0; position: relative; z-index: 10; }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .section-header h2 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-header p {
+            font-size: 1.125rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Gradient Backgrounds */
+        .ambient-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            z-index: 0;
+            overflow: hidden;
+            pointer-events: none;
+            background: var(--bg);
+        }
+
+        .blob {
+            position: absolute;
+            filter: blur(80px);
+            opacity: 0.4;
+            border-radius: 50%;
+            animation: floatBlob 20s infinite alternate ease-in-out;
+        }
+
+        .blob-1 { top: -10%; left: -10%; width: 500px; height: 500px; background: var(--accent); }
+        .blob-2 { bottom: -20%; right: -10%; width: 600px; height: 600px; background: var(--secondary); animation-delay: -5s; }
+        .blob-3 { top: 40%; left: 40%; width: 400px; height: 400px; background: rgba(212, 175, 55, 0.2); animation-delay: -10s; }
+
+        @keyframes floatBlob {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(100px, 50px) scale(1.1); }
+            100% { transform: translate(-50px, 150px) scale(0.9); }
+        }
+
+        /* Custom Cursor */
+        .cursor-dot, .cursor-outline {
+            position: fixed;
+            top: 0; left: 0;
+            border-radius: 50%;
+            z-index: 9999;
+            pointer-events: none;
+            /* transform base remains here, dynamically updated in JS with same offsets */
+        }
+
+        .cursor-dot {
+            width: 8px; height: 8px;
+            background-color: var(--luxury);
+        }
+
+        .cursor-outline {
+            width: 40px; height: 40px;
+            border: 1px solid rgba(212, 175, 55, 0.5);
+            transition: width 0.2s, height 0.2s, background-color 0.2s;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: #fff;
+            box-shadow: 0 10px 20px rgba(7, 30, 61, 0.2);
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            z-index: -1;
+            transition: var(--transition);
+            opacity: 0;
+        }
+
+        .btn-primary:hover::before { opacity: 1; }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 30px rgba(11, 94, 215, 0.3); }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 1px solid rgba(7, 30, 61, 0.2);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary);
+            background: rgba(7, 30, 61, 0.05);
+        }
+
+        /* ==========================================================================
+           NAVIGATION
+           ========================================================================== */
+        nav {
+            position: fixed;
+            top: 0; left: 0; width: 100%;
+            padding: 1.5rem 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        nav.scrolled {
+            padding: 1rem 0;
+            background: rgba(248, 250, 252, 0.85);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border-bottom: 1px solid var(--card-border);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 0%; height: 2px;
+            background: var(--luxury);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after { width: 100%; }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 25px; height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+
+        /* ==========================================================================
+           HERO SECTION
+           ========================================================================== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 6rem;
+            position: relative;
+        }
+
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero-content h1 {
+            font-size: 4.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary), #1a365d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
+            max-width: 500px;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .trust-badges {
+            display: flex;
+            gap: 2rem;
+            border-top: 1px solid rgba(7, 30, 61, 0.1);
+            padding-top: 2rem;
+        }
+
+        .badge {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .badge i {
+            color: var(--luxury);
+            font-size: 1.25rem;
+            background: rgba(212, 175, 55, 0.1);
+            padding: 0.5rem;
+            border-radius: 50%;
+        }
+
+        /* Three.js Canvas Container */
+        .canvas-container {
+            width: 100%;
+            height: 600px;
+            position: relative;
+            border-radius: 40px;
+            background: radial-gradient(circle at center, rgba(86, 204, 242, 0.05) 0%, transparent 70%);
+        }
+
+        canvas {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            outline: none;
+        }
+
+        /* ==========================================================================
+           ABOUT SECTION
+           ========================================================================== */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+            height: 600px;
+            border-radius: 30px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            opacity: 0.8;
+            z-index: 1;
+        }
+
+        .about-image i {
+            font-size: 5rem;
+            color: rgba(255,255,255,0.9);
+            z-index: 2;
+        }
+
+        .about-image-deco {
+            position: absolute;
+            top: -20px; left: -20px; right: 20px; bottom: 20px;
+            border: 2px solid var(--luxury);
+            border-radius: 30px;
+            z-index: -1;
+        }
+
+        .about-content h2 { font-size: 3rem; margin-bottom: 1.5rem; }
+        .about-content p { margin-bottom: 1.5rem; font-size: 1.1rem; }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .stat-card {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-family: 'Playfair Display', serif;
+            color: var(--luxury);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label { font-size: 0.95rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* ==========================================================================
+           SERVICES SECTION
+           ========================================================================== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .service-card {
+            padding: 3rem 2rem;
+            transition: var(--transition);
+            transform-style: preserve-3d;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 50% 0%, rgba(86, 204, 242, 0.1), transparent 70%);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .service-card:hover::before { opacity: 1; }
+        .service-card:hover { transform: translateY(-10px); border-color: rgba(212, 175, 55, 0.3); }
+
+        .service-icon {
+            width: 70px; height: 70px;
+            background: rgba(11, 94, 215, 0.05);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-icon {
+            background: var(--primary);
+            color: var(--luxury);
+            transform: scale(1.1) rotateY(10deg);
+        }
+
+        .service-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+
+        /* ==========================================================================
+           BENTO GRID (WHY CHOOSE US)
+           ========================================================================== */
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 250px);
+            gap: 1.5rem;
+        }
+
+        .bento-item {
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .bento-item:hover { transform: scale(1.02); }
+        .bento-item i { font-size: 2.5rem; color: var(--luxury); margin-bottom: 1rem; }
+        .bento-item h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+
+        .bento-1 { grid-column: span 2; grid-row: span 2; background: var(--primary); color: white; }
+        .bento-1 h3, .bento-1 p { color: white; }
+        .bento-1 h3 { font-size: 2.5rem; }
+        .bento-2 { grid-column: span 2; }
+        .bento-3 { grid-column: span 1; }
+        .bento-4 { grid-column: span 1; }
+
+        /* ==========================================================================
+           PROCESS TIMELINE
+           ========================================================================== */
+        .process-container {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-top: 4rem;
+        }
+
+        .process-container::before {
+            content: '';
+            position: absolute;
+            top: 40px; left: 0; width: 100%; height: 2px;
+            background: linear-gradient(90deg, var(--secondary), var(--luxury));
+            opacity: 0.3;
+            z-index: 1;
+        }
+
+        .process-step {
+            flex: 1;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            padding: 0 1rem;
+        }
+
+        .step-number {
+            width: 80px; height: 80px;
+            background: var(--bg);
+            border: 2px solid var(--luxury);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 0 auto 1.5rem;
+            transition: var(--transition);
+            box-shadow: 0 0 0 10px var(--bg);
+        }
+
+        .process-step:hover .step-number {
+            background: var(--primary);
+            color: var(--luxury);
+            transform: scale(1.1);
+        }
+
+        .process-step h3 { margin-bottom: 0.5rem; }
+
+        /* ==========================================================================
+           DOCTORS SECTION
+           ========================================================================== */
+        .doctors-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .doctor-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .doctor-img-placeholder {
+            width: 200px; height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: #94a3b8;
+            border: 5px solid white;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            transition: var(--transition);
+        }
+
+        .doctor-card:hover .doctor-img-placeholder { transform: scale(1.05); border-color: var(--luxury); }
+        .doctor-card h3 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+        .doctor-role { color: var(--secondary); font-weight: 500; margin-bottom: 1rem; }
+
+        /* ==========================================================================
+           TESTIMONIALS (MARQUEE)
+           ========================================================================== */
+        .marquee-container {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+
+        .marquee-track {
+            display: flex;
+            width: calc(400px * 10); /* Adjust based on card width and count */
+            animation: marquee 30s linear infinite;
+        }
+
+        .marquee-track:hover { animation-play-state: paused; }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-400px * 5)); }
+        }
+
+        .testimonial-card {
+            width: 360px;
+            margin: 0 20px;
+            padding: 2.5rem;
+            flex-shrink: 0;
+        }
+
+        .stars { color: var(--luxury); margin-bottom: 1rem; font-size: 0.9rem; }
+        .testimonial-text { font-style: italic; margin-bottom: 1.5rem; }
+        .patient-name { font-weight: 600; color: var(--primary); }
+
+        /* ==========================================================================
+           FAQ ACCORDION
+           ========================================================================== */
+        .faq-container { max-width: 800px; margin: 0 auto; }
+
+        .faq-item {
+            margin-bottom: 1rem;
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            background: var(--card-bg);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .faq-question {
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+
+        .faq-question i { transition: transform 0.3s ease; color: var(--secondary); }
+        .faq-item.active .faq-question i { transform: rotate(180deg); }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            padding: 0 2rem;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding-bottom: 1.5rem;
+        }
+
+        /* ==========================================================================
+           BOOK APPOINTMENT & LOCATION
+           ========================================================================== */
+        .booking-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .location-details {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .form-group { margin-bottom: 1.5rem; position: relative; }
+        
+        .form-control {
+            width: 100%;
+            padding: 1.2rem 1.5rem;
+            background: rgba(255,255,255,0.5);
+            border: 1px solid rgba(7, 30, 61, 0.1);
+            border-radius: 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+            outline: none;
+        }
+
+        .form-control:focus {
+            background: #fff;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 4px rgba(11, 94, 215, 0.1);
+        }
+
+        textarea.form-control { resize: vertical; min-height: 120px; }
+
+        .map-container {
+            width: 100%;
+            flex: 1;
+            min-height: 300px;
+            border-radius: 24px;
+            overflow: hidden;
+        }
+
+        .map-container iframe { width: 100%; height: 100%; border: none; filter: grayscale(20%) contrast(1.1); }
+
+        /* ==========================================================================
+           FOOTER
+           ========================================================================== */
+        footer {
+            background: #041224; /* Darker luxury theme */
+            color: #e2e8f0;
+            padding: 6rem 0 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 1px;
+            background: linear-gradient(90deg, transparent, var(--luxury), transparent);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .footer-logo { color: #fff; font-size: 1.8rem; margin-bottom: 1.5rem; }
+        .footer-desc { margin-bottom: 2rem; color: #94a3b8; }
+        
+        .social-icons { display: flex; gap: 1rem; }
+        .social-icons a {
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.05);
+            display: flex; align-items: center; justify-content: center;
+            transition: var(--transition);
+        }
+        .social-icons a:hover { background: var(--luxury); color: #fff; transform: translateY(-3px); }
+
+        .footer-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem; color: #fff; margin-bottom: 1.5rem;
+        }
+
+        .footer-links { list-style: none; }
+        .footer-links li { margin-bottom: 0.75rem; }
+        .footer-links a { color: #94a3b8; transition: var(--transition); }
+        .footer-links a:hover { color: var(--luxury); padding-left: 5px; }
+
+        .contact-info li {
+            display: flex; gap: 1rem; margin-bottom: 1rem; color: #94a3b8;
+        }
+        .contact-info i { color: var(--luxury); margin-top: 5px; }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            color: #64748b; font-size: 0.9rem;
+        }
+
+        /* ==========================================================================
+           PREMIUM RESPONSIVE DESIGN
+           ========================================================================== */
+        @media (max-width: 1200px) {
+            .hero-content h1 { font-size: 3.8rem; }
+            section { padding: 6rem 0; }
+            .about-grid, .booking-grid { gap: 3rem; }
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .bento-grid { grid-template-columns: repeat(3, 1fr); grid-template-rows: auto auto; }
+            .bento-1 { grid-column: span 3; }
+            .bento-2 { grid-column: span 2; }
+            .bento-3, .bento-4 { grid-column: span 1; }
+        }
+
+        @media (max-width: 1024px) {
+            .hero-container { grid-template-columns: 1fr; text-align: center; gap: 2rem; }
+            .hero { padding-top: 8rem; min-height: auto; }
+            .hero-content h1 { font-size: 3.5rem; margin: 0 auto 1.5rem; }
+            .hero-content p { margin: 0 auto 2.5rem; }
+            .hero-btns, .trust-badges { justify-content: center; flex-wrap: wrap; }
+            
+            .about-grid { grid-template-columns: 1fr; }
+            .about-image { height: 400px; order: -1; }
+            
+            .doctors-grid { grid-template-columns: repeat(2, 1fr); }
+            .booking-grid { grid-template-columns: 1fr; }
+            
+            .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 3rem; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed; top: 0; right: -100%;
+                width: 100vw; height: 100vh;
+                background: rgba(248, 250, 252, 0.98);
+                backdrop-filter: blur(20px);
+                flex-direction: column; justify-content: center; align-items: center;
+                transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+                gap: 2rem;
+            }
+            .nav-links.active { right: 0; }
+            .nav-links a { font-size: 1.5rem; }
+            .hamburger { display: flex; }
+            
+            .section-header h2 { font-size: 2.8rem; }
+            .services-grid, .doctors-grid { grid-template-columns: 1fr; }
+            
+            .process-container { flex-direction: column; gap: 3rem; }
+            .process-container::before {
+                width: 2px; height: 100%; top: 0; left: 50%; transform: translateX(-50%);
+            }
+            
+            .bento-grid { grid-template-columns: 1fr; }
+            .bento-1, .bento-2, .bento-3, .bento-4 { grid-column: span 1; }
+            .bento-item { padding: 2rem; }
+            
+            .booking-form { padding: 2rem !important; }
+            
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .social-icons { justify-content: center; }
+            .contact-info li { justify-content: center; }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 { font-size: 2.5rem; }
+            section { padding: 4rem 0; }
+            .section-header h2 { font-size: 2.2rem; }
+            .about-image { height: 300px; }
+            .stat-number { font-size: 2.5rem; }
+            .canvas-container { height: 400px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ambient-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 6px;">
+                    <path d="M12 2L3 7L12 12L21 7L12 2Z" stroke="var(--luxury)" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M3 17L12 22L21 17" stroke="var(--luxury)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 12L12 17L21 12" stroke="var(--luxury)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span style="font-weight: 400; letter-spacing: 0.5px;">KH <span style="font-weight: 700; color: var(--luxury);">DENTAL</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="#book" class="btn btn-primary magnetic" style="display: none; /* hidden on mobile natively if needed, shown via flex */">Book Appointment</a>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content fade-up">
+                <h1>Transforming Smiles with Precision & Care</h1>
+                <p>Experience the pinnacle of modern dentistry in a luxurious, calming environment. We combine state-of-the-art technology with personalized aesthetic care.</p>
+                
+                <div class="hero-btns">
+                    <a href="#book" class="btn btn-primary magnetic">Book Appointment</a>
+                    <a href="tel:03352108482" class="btn btn-outline magnetic"><i class="fa-solid fa-phone" style="margin-right: 8px;"></i> Call Now</a>
+                </div>
+
+                <div class="trust-badges">
+                    <div class="badge"><i class="fa-solid fa-star"></i> Premium Care</div>
+                    <div class="badge"><i class="fa-solid fa-clock"></i> 11AM–11PM</div>
+                    <div class="badge"><i class="fa-solid fa-location-dot"></i> Clifton, Karachi</div>
+                </div>
+            </div>
+
+            <div class="hero-visual fade-up" style="transition-delay: 0.2s;">
+                <div class="canvas-container glass">
+                    <canvas id="webgl-canvas"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container about-grid">
+            <div class="about-image fade-up">
+                <div class="about-image-deco"></div>
+                <i class="fa-solid fa-hospital-user"></i>
+            </div>
+            <div class="about-content fade-up">
+                <h2>Excellence in Dental Aesthetics</h2>
+                <p>At KH Dental & Aesthetics Clinic, we believe that a beautiful smile is a reflection of perfect health. Located in the heart of Clifton, Karachi, our clinic is designed to provide a serene, luxury experience unlike any traditional dental office.</p>
+                <p>Our philosophy is rooted in precision, modern technology, and human warmth. From general checkups to full smile reconstructions, our specialists ensure every treatment is painless, effective, and tailored to you.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card glass">
+                        <div class="stat-number">5K+</div>
+                        <div class="stat-label">Happy Patients</div>
+                    </div>
+                    <div class="stat-card glass">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Years Excellence</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Our Premium Services</h2>
+                <p>Comprehensive dental and aesthetic treatments utilizing the latest advancements in medical technology.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card glass fade-up" style="transition-delay: 0s;">
+                    <div class="service-icon"><i class="fa-solid fa-tooth"></i></div>
+                    <h3>General Dentistry</h3>
+                    <p>Routine checkups, cleanings, and preventive care to maintain perfect oral hygiene and health.</p>
+                </div>
+                <div class="service-card glass fade-up" style="transition-delay: 0.1s;">
+                    <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Cosmetic Dentistry</h3>
+                    <p>Veneers, bonding, and aesthetic contouring to achieve a flawless, natural-looking smile.</p>
+                </div>
+                <div class="service-card glass fade-up" style="transition-delay: 0.2s;">
+                    <div class="service-icon"><i class="fa-regular fa-face-smile-beam"></i></div>
+                    <h3>Smile Enhancement</h3>
+                    <p>Comprehensive smile makeovers customized to complement your unique facial aesthetics.</p>
+                </div>
+                <div class="service-card glass fade-up" style="transition-delay: 0s;">
+                    <div class="service-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                    <h3>Dental Consultation</h3>
+                    <p>In-depth assessments and personalized treatment plans with our expert specialists.</p>
+                </div>
+                <div class="service-card glass fade-up" style="transition-delay: 0.1s;">
+                    <div class="service-icon"><i class="fa-solid fa-spa"></i></div>
+                    <h3>Aesthetic Dentistry</h3>
+                    <p>Advanced procedures blending art and science to perfect your dental aesthetics and confidence.</p>
+                </div>
+                <div class="service-card glass fade-up" style="transition-delay: 0.2s;">
+                    <div class="service-icon"><i class="fa-solid fa-shield-heart"></i></div>
+                    <h3>Preventive Care</h3>
+                    <p>Proactive treatments and education to protect your teeth against future dental issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>The KH Dental Standard</h2>
+                <p>Discover why our clinic is the premier choice for luxury dental care in Karachi.</p>
+            </div>
+
+            <div class="bento-grid">
+                <div class="bento-item glass bento-1 fade-up" style="transition-delay: 0s;">
+                    <i class="fa-solid fa-microscope" style="color: white;"></i>
+                    <h3>Advanced Technology</h3>
+                    <p>We utilize cutting-edge 3D imaging, laser dentistry, and state-of-the-art sterilization protocols to ensure maximum precision and patient safety.</p>
+                </div>
+                <div class="bento-item glass bento-2 fade-up" style="transition-delay: 0.1s;">
+                    <i class="fa-solid fa-couch"></i>
+                    <h3>Comfortable Environment</h3>
+                    <p>Designed to alleviate dental anxiety. Relax in our premium lounge-style clinic before your treatment.</p>
+                </div>
+                <div class="bento-item glass bento-3 fade-up" style="transition-delay: 0s;">
+                    <i class="fa-solid fa-user-check"></i>
+                    <h3>Patient First</h3>
+                    <p>Highly personalized care plans tailored to your specific needs.</p>
+                </div>
+                <div class="bento-item glass bento-4 fade-up" style="transition-delay: 0.1s;">
+                    <i class="fa-solid fa-gem"></i>
+                    <h3>Premium Quality</h3>
+                    <p>Only the finest Swiss and German dental materials are used.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Your Journey to Perfection</h2>
+                <p>A seamless, transparent, and luxurious process from the moment you step in.</p>
+            </div>
+
+            <div class="process-container fade-up">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>Consultation</h3>
+                    <p>Comprehensive assessment and goal discussion.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>Diagnosis</h3>
+                    <p>Precise 3D scanning and treatment mapping.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>Treatment</h3>
+                    <p>Painless execution using advanced technology.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3>Beautiful Smile</h3>
+                    <p>Reveal your perfect, confident new look.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="doctors">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Our Specialists</h2>
+                <p>Trusted professionals dedicated to medical excellence.</p>
+            </div>
+
+            <div class="doctors-grid">
+                <div class="doctor-card glass fade-up" style="transition-delay: 0s;">
+                    <div class="doctor-img-placeholder"><i class="fa-solid fa-user-md"></i></div>
+                    <h3>Dr. Specialist One</h3>
+                    <div class="doctor-role">Lead Cosmetic Dentist</div>
+                    <p>Expert in smile design and porcelain veneers with over 10 years of clinical excellence.</p>
+                    <button class="btn btn-outline magnetic" style="margin-top: 1rem; padding: 0.5rem 1.5rem;">Book Visit</button>
+                </div>
+                <div class="doctor-card glass fade-up" style="transition-delay: 0.1s;">
+                    <div class="doctor-img-placeholder"><i class="fa-solid fa-user-md"></i></div>
+                    <h3>Dr. Specialist Two</h3>
+                    <div class="doctor-role">Orthodontist & Aesthetics</div>
+                    <p>Specializes in clear aligners, aesthetic contouring, and facial harmony.</p>
+                    <button class="btn btn-outline magnetic" style="margin-top: 1rem; padding: 0.5rem 1.5rem;">Book Visit</button>
+                </div>
+                <div class="doctor-card glass fade-up" style="transition-delay: 0.2s;">
+                    <div class="doctor-img-placeholder"><i class="fa-solid fa-user-md"></i></div>
+                    <h3>Dr. Specialist Three</h3>
+                    <div class="doctor-role">Implantologist</div>
+                    <p>Pioneer in modern dental implants and restorative surgical procedures.</p>
+                    <button class="btn btn-outline magnetic" style="margin-top: 1rem; padding: 0.5rem 1.5rem;">Book Visit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" style="padding-bottom: 4rem;">
+        <div class="section-header fade-up">
+            <h2>Patient Stories</h2>
+            <p>Don't just take our word for it. Hear from those whose smiles we've transformed.</p>
+        </div>
+        
+        <div class="marquee-container fade-up">
+            <div class="marquee-track">
+                <div class="testimonial-card glass">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="testimonial-text">"Absolutely world-class experience. The clinic feels like a 5-star hotel and the doctors are incredibly skilled. My smile has never looked better."</p>
+                    <div class="patient-name">— Sarah A.</div>
+                </div>
+                <div class="testimonial-card glass">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="testimonial-text">"I always had dental anxiety until I visited KH Dental. The atmosphere is so calming and the procedure was completely painless."</p>
+                    <div class="patient-name">— Ali K.</div>
+                </div>
+                <div class="testimonial-card glass">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="testimonial-text">"The level of precision in their cosmetic work is unmatched in Karachi. Worth every penny for the confidence I gained."</p>
+                    <div class="patient-name">— Fatima R.</div>
+                </div>
+                <div class="testimonial-card glass">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="testimonial-text">"Highly professional staff and modern equipment. The entire process from booking to the final result was seamless."</p>
+                    <div class="patient-name">— Usman M.</div>
+                </div>
+                <div class="testimonial-card glass">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="testimonial-text">"A true luxury dental clinic. The attention to detail is evident in everything they do. Highly recommended."</p>
+                    <div class="patient-name">— Zara H.</div>
+                </div>
+                <div class="testimonial-card glass">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="testimonial-text">"Absolutely world-class experience. The clinic feels like a 5-star hotel and the doctors are incredibly skilled. My smile has never looked better."</p>
+                    <div class="patient-name">— Sarah A.</div>
+                </div>
+                <div class="testimonial-card glass">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="testimonial-text">"I always had dental anxiety until I visited KH Dental. The atmosphere is so calming and the procedure was completely painless."</p>
+                    <div class="patient-name">— Ali K.</div>
+                </div>
+                <div class="testimonial-card glass">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="testimonial-text">"The level of precision in their cosmetic work is unmatched in Karachi. Worth every penny for the confidence I gained."</p>
+                    <div class="patient-name">— Fatima R.</div>
+                </div>
+                <div class="testimonial-card glass">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="testimonial-text">"Highly professional staff and modern equipment. The entire process from booking to the final result was seamless."</p>
+                    <div class="patient-name">— Usman M.</div>
+                </div>
+                <div class="testimonial-card glass">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="testimonial-text">"A true luxury dental clinic. The attention to detail is evident in everything they do. Highly recommended."</p>
+                    <div class="patient-name">— Zara H.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our clinic and treatments.</p>
+            </div>
+
+            <div class="faq-container fade-up">
+                <div class="faq-item">
+                    <div class="faq-question">What are your consultation fees? <i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Our initial consultation fee typically ranges between PKR 2,500 and PKR 3,500. This includes a thorough examination and discussion of your dental goals.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What are your business hours? <i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>We are open Monday to Saturday, from 11:00 AM to 11:00 PM. We are closed on Sundays to allow our staff to rest and recharge.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Where is the clinic located? <i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>KH Dental & Aesthetics Clinic is located at No. G, Yousuf Grand Plot, M-25, Mezzanine Floor, 8 KDA Scheme 5, Block 8 Clifton, Karachi, 74200.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Do you offer cosmetic dentistry? <i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Yes, we specialize in high-end cosmetic dentistry, including veneers, teeth whitening, smile enhancement, and complete smile makeovers.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="book">
+        <div class="container">
+            <div class="booking-grid">
+                
+                <div class="booking-form glass fade-up" style="padding: 3rem;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Book a Consultation</h2>
+                    <p style="margin-bottom: 2rem;">Take the first step towards your perfect smile.</p>
+                    
+                    <form onsubmit="event.preventDefault(); alert('Appointment Request Submitted Successfully!');">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div class="form-group">
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" required>
+                                    <option value="" disabled selected>Select Time</option>
+                                    <option>11:00 AM - 02:00 PM</option>
+                                    <option>02:00 PM - 06:00 PM</option>
+                                    <option>06:00 PM - 11:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary magnetic" style="width: 100%;">Submit Request</button>
+                    </form>
+                </div>
+
+                <div class="location-details fade-up" style="transition-delay: 0.2s;">
+                    <div class="map-container glass">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14483.921609147573!2d67.02293425!3d24.8303867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33dc05e045435%3A0xc67fdb6e11504cc6!2sClifton%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1683050412345!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    
+                    <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                            <i class="fa-solid fa-location-dot" style="color: var(--secondary); font-size: 1.5rem;"></i>
+                            <div>
+                                <strong style="color: var(--primary);">Address</strong>
+                                <p>No. G, Yousuf Grand Plot, M-25, Mezzanine Floor, 8 KDA Scheme 5, Block 8 Clifton, Karachi, 74200</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: center;">
+                            <i class="fa-solid fa-phone" style="color: var(--secondary); font-size: 1.5rem;"></i>
+                            <div>
+                                <strong style="color: var(--primary);">Phone</strong>
+                                <p>0335 2108482</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo footer-logo">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 6px;">
+                            <path d="M12 2L3 7L12 12L21 7L12 2Z" stroke="var(--luxury)" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M3 17L12 22L21 17" stroke="var(--luxury)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 12L12 17L21 12" stroke="var(--luxury)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span style="font-weight: 400; letter-spacing: 0.5px;">KH <span style="font-weight: 700; color: var(--luxury);">DENTAL</span></span>
+                    </div>
+                    <p class="footer-desc">Redefining modern dentistry with a touch of luxury. Precision care, world-class aesthetics, and an unparalleled patient experience in the heart of Karachi.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Treatments</a></li>
+                        <li><a href="#doctors">Our Specialists</a></li>
+                        <li><a href="#testimonials">Patient Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">General Dentistry</a></li>
+                        <li><a href="#">Cosmetic Dentistry</a></li>
+                        <li><a href="#">Smile Enhancement</a></li>
+                        <li><a href="#">Dental Consultation</a></li>
+                        <li><a href="#">Aesthetic Dentistry</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Contact & Hours</h4>
+                    <ul class="contact-info">
+                        <li><i class="fa-solid fa-clock"></i> <div>Mon - Sat: 11:00 AM – 11:00 PM<br>Sunday: Closed</div></li>
+                        <li><i class="fa-solid fa-wallet"></i> <div>Consultation: PKR 2,500–3,500</div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                © <span id="year"></span> KH Dental & Aesthetics Clinic. All Rights Reserved. Crafted with precision.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+            
+            // Set current year
+            document.getElementById('year').innerText = new Date().getFullYear();
+
+            // 1. Lenis Smooth Scroll Initialization
+            const lenis = new Lenis({
+                duration: 1.2,
+                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Apple-like easing
+                direction: 'vertical',
+                gestureDirection: 'vertical',
+                smooth: true,
+                mouseMultiplier: 1,
+                smoothTouch: false,
+                touchMultiplier: 2,
+                infinite: false,
+            });
+
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+            requestAnimationFrame(raf);
+
+            // Connect Lenis to GSAP ScrollTrigger
+            lenis.on('scroll', ScrollTrigger.update);
+            gsap.ticker.add((time)=>{ lenis.raf(time * 1000) });
+            gsap.ticker.lagSmoothing(0);
+
+
+            // 2. Custom Cursor Logic (FIXED ORIGIN)
+            const cursorDot = document.querySelector('.cursor-dot');
+            const cursorOutline = document.querySelector('.cursor-outline');
+            let mouseX = 0, mouseY = 0;
+            let outlineX = 0, outlineY = 0;
+
+            window.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                cursorDot.style.transform = `translate(${mouseX}px, ${mouseY}px) translate(-50%, -50%)`;
+            });
+
+            // Smooth follow for outline
+            function animateCursor() {
+                let distX = mouseX - outlineX;
+                let distY = mouseY - outlineY;
+                outlineX += distX * 0.15;
+                outlineY += distY * 0.15;
+                cursorOutline.style.transform = `translate(${outlineX}px, ${outlineY}px) translate(-50%, -50%)`;
+                requestAnimationFrame(animateCursor);
+            }
+            animateCursor();
+
+            // Hover effects on interactable elements
+            const interactables = document.querySelectorAll('a, button, .faq-question');
+            interactables.forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursorOutline.style.width = '60px';
+                    cursorOutline.style.height = '60px';
+                    cursorOutline.style.backgroundColor = 'rgba(212, 175, 55, 0.1)';
+                });
+                el.addEventListener('mouseleave', () => {
+                    cursorOutline.style.width = '40px';
+                    cursorOutline.style.height = '40px';
+                    cursorOutline.style.backgroundColor = 'transparent';
+                });
+            });
+
+
+            // 3. Magnetic Buttons
+            const magnets = document.querySelectorAll('.magnetic');
+            magnets.forEach(magnet => {
+                magnet.addEventListener('mousemove', (e) => {
+                    const rect = magnet.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    gsap.to(magnet, { x: x * 0.3, y: y * 0.3, duration: 0.4, ease: 'power2.out' });
+                });
+                magnet.addEventListener('mouseleave', () => {
+                    gsap.to(magnet, { x: 0, y: 0, duration: 0.6, ease: 'elastic.out(1, 0.3)' });
+                });
+            });
+
+
+            // 4. Navbar Scroll & Mobile Menu
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) navbar.classList.add('scrolled');
+                else navbar.classList.remove('scrolled');
+            });
+
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+
+
+            // 5. FAQ Accordion
+            const faqs = document.querySelectorAll('.faq-item');
+            faqs.forEach(faq => {
+                faq.querySelector('.faq-question').addEventListener('click', () => {
+                    // Close others
+                    faqs.forEach(f => {
+                        if (f !== faq) f.classList.remove('active');
+                    });
+                    faq.classList.toggle('active');
+                });
+            });
+
+
+            // 6. GSAP Scroll Animations (FIXED GSAP LAG & GLITCH)
+            gsap.registerPlugin(ScrollTrigger);
+            
+            const fadeUps = gsap.utils.toArray('.fade-up');
+            fadeUps.forEach(elem => {
+                // Keep inline transition-delay stagger logic but feed it to GSAP directly
+                let delayTime = 0;
+                if(elem.style.transitionDelay) {
+                    delayTime = parseFloat(elem.style.transitionDelay);
+                    elem.style.transitionDelay = ''; // Clear inline CSS delay so it doesn't fight GSAP
+                }
+
+                gsap.fromTo(elem, 
+                    { y: 50, opacity: 0 },
+                    { 
+                        y: 0, opacity: 1, 
+                        duration: 0.8, 
+                        delay: delayTime,
+                        ease: 'power3.out',
+                        scrollTrigger: {
+                            trigger: elem,
+                            start: 'top 85%',
+                            toggleActions: 'play none none reverse',
+                            fastScrollEnd: true, // Prevents glitching on rapid scrolls
+                            onEnter: () => elem.classList.add('is-animating'),
+                            onLeaveBack: () => elem.classList.add('is-animating')
+                        },
+                        onComplete: () => {
+                            elem.classList.remove('is-animating');
+                            gsap.set(elem, { clearProps: 'transform' }); // Wipe GSAP transform so CSS hovers work perfectly again
+                        },
+                        onReverseComplete: () => {
+                            elem.classList.remove('is-animating');
+                        }
+                    }
+                );
+            });
+
+
+            // 7. Advanced Three.js Experience (Crystal Tooth / Medical Visual)
+            initThreeJS();
+
+            function initThreeJS() {
+                const canvas = document.querySelector('#webgl-canvas');
+                const container = document.querySelector('.canvas-container');
+                
+                // Scene setup
+                const scene = new THREE.Scene();
+                // We want transparent background to blend with HTML
+                
+                const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 100);
+                camera.position.z = 8;
+
+                const renderer = new THREE.WebGLRenderer({ 
+                    canvas: canvas, 
+                    alpha: true, 
+                    antialias: true,
+                    powerPreference: "high-performance"
+                });
+                renderer.setSize(container.clientWidth, container.clientHeight);
+                renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+                renderer.physicallyCorrectLights = true;
+                renderer.outputEncoding = THREE.sRGBEncoding;
+                renderer.toneMapping = THREE.ACESFilmicToneMapping;
+
+                // Lighting (Volumetric/Aurora feel)
+                const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+                scene.add(ambientLight);
+
+                const blueLight = new THREE.PointLight(0x56CCF2, 5, 20);
+                blueLight.position.set(-2, 2, 2);
+                scene.add(blueLight);
+
+                const goldLight = new THREE.PointLight(0xD4AF37, 3, 20);
+                goldLight.position.set(2, -2, 2);
+                scene.add(goldLight);
+
+                const topLight = new THREE.DirectionalLight(0xffffff, 2);
+                topLight.position.set(0, 5, 5);
+                scene.add(topLight);
+
+                // Create Stylized Crystal "Tooth"
+                const toothGroup = new THREE.Group();
+
+                // High-end PBR Glass Material
+                const glassMaterial = new THREE.MeshPhysicalMaterial({
+                    color: 0xffffff,
+                    metalness: 0.1,
+                    roughness: 0.05,
+                    transmission: 0.95, // glass effect
+                    thickness: 1.5,
+                    ior: 1.5,
+                    opacity: 1,
+                    transparent: true,
+                    side: THREE.DoubleSide,
+                    clearcoat: 1.0,
+                    clearcoatRoughness: 0.1,
+                });
+
+                // Inner glowing core
+                const coreMaterial = new THREE.MeshBasicMaterial({
+                    color: 0x56CCF2,
+                    transparent: true,
+                    opacity: 0.3
+                });
+
+                // Shape construction (Abstract faceted jewel representing a tooth)
+                // Using an Icosahedron stretched on Y axis creates a beautiful crystal
+                const geometry = new THREE.IcosahedronGeometry(1.5, 2);
+                const pos = geometry.attributes.position;
+                for (let i = 0; i < pos.count; i++) {
+                    let y = pos.getY(i);
+                    // Elongate top and bottom to look root/crown like
+                    if (y < 0) {
+                        pos.setY(i, y * 1.5);
+                        pos.setX(i, pos.getX(i) * 0.8);
+                        pos.setZ(i, pos.getZ(i) * 0.8);
+                    } else {
+                        pos.setY(i, y * 0.8);
+                    }
+                }
+                geometry.computeVertexNormals();
+
+                const crystalMesh = new THREE.Mesh(geometry, glassMaterial);
+                const coreMesh = new THREE.Mesh(new THREE.IcosahedronGeometry(0.8, 1), coreMaterial);
+                
+                toothGroup.add(crystalMesh);
+                toothGroup.add(coreMesh);
+                scene.add(toothGroup);
+
+                // Particles (Medical Halo)
+                const particlesGeometry = new THREE.BufferGeometry();
+                const particlesCount = 200;
+                const posArray = new Float32Array(particlesCount * 3);
+                
+                for(let i=0; i < particlesCount * 3; i+=3) {
+                    // Orbiting ring logic
+                    const radius = 2.5 + Math.random();
+                    const theta = Math.random() * Math.PI * 2;
+                    const y = (Math.random() - 0.5) * 4;
+                    
+                    posArray[i] = Math.cos(theta) * radius;
+                    posArray[i+1] = y;
+                    posArray[i+2] = Math.sin(theta) * radius;
+                }
+                
+                particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+                const particlesMaterial = new THREE.PointsMaterial({
+                    size: 0.02,
+                    color: 0x56CCF2,
+                    transparent: true,
+                    opacity: 0.6,
+                    blending: THREE.AdditiveBlending
+                });
+                
+                const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+                scene.add(particlesMesh);
+
+                // Animation Variables
+                let mouseX = 0;
+                let mouseY = 0;
+                let targetX = 0;
+                let targetY = 0;
+                const windowHalfX = window.innerWidth / 2;
+                const windowHalfY = window.innerHeight / 2;
+
+                // Mouse interaction
+                document.addEventListener('mousemove', (event) => {
+                    mouseX = (event.clientX - windowHalfX);
+                    mouseY = (event.clientY - windowHalfY);
+                });
+
+                // Clock for smooth animation
+                const clock = new THREE.Clock();
+
+                // Render Loop
+                function animateThree() {
+                    requestAnimationFrame(animateThree);
+                    
+                    const elapsedTime = clock.getElapsedTime();
+
+                    // Smooth rotation inertia
+                    targetX = mouseX * 0.001;
+                    targetY = mouseY * 0.001;
+
+                    toothGroup.rotation.y += 0.005 + (targetX - toothGroup.rotation.y) * 0.05;
+                    toothGroup.rotation.x += (targetY - toothGroup.rotation.x) * 0.05;
+                    
+                    // Floating effect
+                    toothGroup.position.y = Math.sin(elapsedTime * 0.5) * 0.2;
+
+                    // Particle rotation
+                    particlesMesh.rotation.y = elapsedTime * 0.1;
+                    
+                    // Dynamic lighting shift
+                    blueLight.position.x = Math.sin(elapsedTime) * 3;
+                    blueLight.position.z = Math.cos(elapsedTime) * 3;
+
+                    renderer.render(scene, camera);
+                }
+                
+                animateThree();
+
+                // Handle Resize efficiently
+                let resizeTimeout;
+                window.addEventListener('resize', () => {
+                    clearTimeout(resizeTimeout);
+                    resizeTimeout = setTimeout(() => {
+                        const width = container.clientWidth;
+                        const height = container.clientHeight;
+                        renderer.setSize(width, height);
+                        camera.aspect = width / height;
+                        camera.updateProjectionMatrix();
+                    }, 100);
+                });
+            }
+
+        });
+    </script>
+</body>
+</html>
